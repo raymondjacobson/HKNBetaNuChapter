@@ -1,0 +1,58 @@
+<html ng-app='hknApp'>
+  <head>
+  <title>Rensselaer | Eta Kappa Nu</title>
+  <link rel='stylesheet' href='styles/grid.css'/>
+  <link rel='stylesheet' href='styles/main.css'/>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <script src='js/jquery.min.js'></script>
+  <script src='js/modernizr.min.js'></script>
+  <script src='js/angular.min.js'></script>
+  <script src='js/angular-route.min.js'></script>
+  <script src='js/angular-animate.min.js'></script>
+  <script src='js/main.js'></script>
+  </head>
+  <body ng-controller='Ctrl'>
+    <div id='container'>
+      <video autoplay loop id="bgvid">
+        <source src="img/hkn.webm" type="video/webm">
+        <source src="img/hkn.mp4" type="video/mp4">
+      </video>
+      <div class='liner liner-diamond'>
+      </div>
+      <div class='row center-text'>
+        <div class='large-12 columns'>
+          <h1>Eta Kappa Nu</h1>
+          <h2>Beta Nu Chapter</h2>
+          <h2>At Rensselaer</h2>
+        </div>
+      </div>
+        <div id="nav" class='row center-text'>
+          <a href="#" class="home"><div class="large-2 columns">
+            <p>Home</p>
+          </div></a>
+          <a href="#news" class="news"><div class="large-2 columns">
+            <p>News</p>
+          </div></a>
+          <a href="#about" class="about"><div class="large-2 columns">
+            <p>About</p>
+          </div></a>
+          <a href="#membership" class="membership"><div class="large-2 columns">
+            <p>Membership</p>
+          </div></a>
+          <a href="#projects" class="projects"><div class="large-2 columns">
+            <p>Projects</p>
+          </div></a>
+          <a href="#events" class="events"><div class="large-2 columns">
+            <p>Events</p>
+          </div></a>
+        </div>
+        <div ng-view></div>
+    </div>
+        <div id="footer" class='center-text'>
+            <!-- <img src='img/hkn.png'/> -->
+            <p>&copy; 2014, ECSE Department</p>
+            <p>110 Eighth Street, Troy NY</p>
+        </div>
+    <script src='js/angles.js'></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #e3e3e3;
+  letter-spacing: 1px;
+  font-family: Georgia, serif;
+  background: #000;
+}
+#container {
+  height: 100%;
+  width: 100%;
+}
+video#bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  background-size: cover;
+}
+.liner {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.liner.liner-diamond {
+  background: url("../img/liner-diamond-dark.png");
+}
+#nav {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: 'Roboto Slab', serif;
+  border-bottom: 1px solid #e3e3e3;
+}
+#nav .columns {
+  padding: 20px 0px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  o-transition: all 0.3s linear;
+  cursor: pointer;
+}
+#nav .columns.selected,
+#nav .columns:hover {
+  background: #e3e3e3;
+}
+#nav .columns.selected p,
+#nav .columns:hover p {
+  color: #333;
+  font-weight: bold;
+}
+#nav div {
+  padding: 0;
+}
+#nav p {
+  margin: 0;
+}
+#footer {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 10px 0px;
+  width: 100%;
+}
+#footer p {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+.ng-scope {
+  margin-bottom: 80px;
+}
+.center-text {
+  text-align: center;
+}
+.row.content {
+  z-index: 100;
+  position: relative;
+  background: rgba(255,255,255,0.9);
+  color: #333;
+  padding: 20px 10px;
+  margin: 20px auto;
+}
+.row.content a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -ms-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  o-transition: color 0.1s linear;
+  color: #b63041;
+}
+.row.content a.blue {
+  color: #1871a2;
+}
+.row.content a:hover {
+  color: #b6b6b6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Slab', serif;
+}
+h1 {
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: 2.8em;
+  margin: 10px 0px 0px;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 8px;
+  font-size: 1em;
+}
+a {
+  color: #e3e3e3;
+  text-decoration: none;
+}
+p {
+  letter-spacing: 2px;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+table {
+  color: #5c5c5c;
+}

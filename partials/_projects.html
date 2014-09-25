@@ -1,0 +1,13 @@
+<div class='row content'>
+  <div class='large-12 columns'>
+    <h3>{{page}} -- Coming Soon</h3>
+  </div>
+</div>
+
+<div class='row content' ng-repeat="project in projects">
+  <div class='large-12 columns'>
+    <h3>{{project.gsx$title.$t}}</h3>
+    <p><small>{{project.gsx$members.$t}}</small></p>
+    <p>{{project.gsx$description.$t}}</p>
+  </div>
+</div>

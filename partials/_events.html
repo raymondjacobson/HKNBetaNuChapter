@@ -1,0 +1,13 @@
+<div class='row content'>
+  <div class='large-12 columns'>
+    <h3>{{page}} -- Coming Soon</h3>
+  </div>
+</div>
+
+<div class='row content' ng-repeat="event in events">
+  <div class='large-12 columns'>
+    <h3>{{event.gsx$title.$t}}</h3>
+    <p><small>{{event.gsx$date.$t}} | {{event.gsx$time.$t}}</small> @ {{event.gsx$location.$t}}</p>
+    <p>{{event.gsx$description.$t}}</p>
+  </div>
+</div>

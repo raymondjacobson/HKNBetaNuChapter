@@ -1,0 +1,134 @@
+// (c) Raymond Jacobson 2014
+
+OFF_WHITE = #e3e3e3
+MAIN_GRAY = #333
+MAIN_RED = rgb(182, 48, 65)
+MAIN_BLUE = rgb(24, 113, 162);
+
+// mixins
+fader(prop, seconds)
+  -webkit-transition prop seconds linear
+  -moz-transition prop seconds linear
+  -ms-transition prop seconds linear
+  -o-transition prop seconds linear
+  o-transition prop seconds linear
+
+
+// general
+
+html, body
+  margin 0
+  padding 0
+  color OFF_WHITE
+  letter-spacing 1px
+  font-family Georgia, serif
+  background black
+
+#container
+  height 100%
+  width 100%
+  // background url('../img/S2014class.jpg') no-repeat center center fixed
+  // -webkit-background-size cover
+  // -moz-background-size cover
+  // -o-background-size cover
+  // background-size cover
+
+video#bgvid
+  position fixed
+  right 0
+  bottom 0
+  min-width 100%
+  min-height 100%
+  width auto
+  height auto
+  z-index 0
+  // background url('img/S2014class.jpg') no-repeat
+  background-size cover
+
+.liner
+  position fixed
+  height 100%
+  width 100%
+  &.liner-diamond
+    background url('../img/liner-diamond-dark.png')
+
+#nav
+  position relative
+  margin-bottom 20px
+  font-family 'Roboto Slab', serif
+  border-bottom 1px solid OFF_WHITE
+  .columns
+    padding 20px 0px
+    fader(all, 0.3s)
+    cursor pointer
+    &.selected, &:hover
+      background OFF_WHITE
+      p
+        color MAIN_GRAY 
+        font-weight bold
+  div
+    padding 0
+  p
+    margin 0
+
+#footer
+  position fixed
+  z-index 100
+  bottom 0
+  background rgba(0, 0, 0, 0.8)
+  padding 10px 0px
+  width 100%
+  p
+    font-size 8px
+    text-transform uppercase
+.ng-scope
+  margin-bottom 80px
+
+.center-text
+  text-align center
+
+.row.content
+  z-index 100
+  position relative
+  background rgba(255,255,255,0.9)
+  color MAIN_GRAY
+  padding 20px 10px
+  margin 20px auto
+  a
+    fader(color, 0.1s)
+    color MAIN_RED
+    &.blue
+      color MAIN_BLUE
+    &:hover
+      color darken(OFF_WHITE, 20%);
+
+// tyepography
+
+h1, h2, h3, h4, h5, h6
+  font-family 'Roboto Slab', serif
+
+h1
+  font-weight 300
+  letter-spacing 8px
+  font-size 2.8em
+  margin 10px 0px 0px
+  // border-bottom 1px solid OFF_WHITE
+  // text-transform uppercase
+
+h2
+  text-transform uppercase
+  font-weight 300
+  letter-spacing 8px
+  font-size 1em
+
+a
+  color OFF_WHITE
+  text-decoration none
+
+p
+  letter-spacing 2px
+  font-size 1em
+  line-height 1.2em
+
+table
+  color lighten(MAIN_GRAY, 20%)

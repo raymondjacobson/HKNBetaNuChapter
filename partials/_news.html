@@ -1,0 +1,13 @@
+<div class='row content'>
+  <div class='large-12 columns'>
+    <h3>{{page}} -- Coming Soon</h3>
+  </div>
+</div>
+
+<div class='row content' ng-repeat="article in news">
+  <div class='large-12 columns'>
+    <h3>{{article.gsx$title.$t}}</h3>
+    <p><small>{{article.gsx$date.$t}}</small></p>
+    <p>{{article.gsx$body.$t}}</p>
+  </div>
+</div>
